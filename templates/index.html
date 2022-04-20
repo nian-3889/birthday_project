@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>라이네라의 31번째 생일 메시지함</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!---->
+    <div class="wrap">
+        <!--헤더-->
+        <header class="header">
+            <p>거짓말 같은 환상 속에서 함께 해줘서 고마워, 라이네라!</p>
+        </header>
+
+        <!--카운트다운-->
+        <div>
+            <p id="remain-text"></p>
+            <p id="remain-time"></p>
+        </div>
+
+        <hr>
+
+        <p class="bando-message">
+            우리 일상에 거짓말같이 찾아와 준 라이네라.<br>
+            너의 31번째 생일도 특별해지도록 우리의 작은 축전을 담았어.<br>
+            거짓말 같은 매일이 평범한 일상으로 돌아가기 전까지 함께 나아가자.
+        </p>
+        <div class="mypost">
+            <input type="text" id="name" class="form-control" placeholder="닉네임">
+            <textarea class="form-control" id="message" cols="30" rows="10" placeholder="생일축하 멘트" maxlength="400"></textarea>
+            <input type="button" class="form-button" value="메시지 남기기" onclick="save_message">
+        </div>
+
+        <hr>
+
+        <!--이미지, 영상이 생기면 슬라이스로 구축-->
+
+        <!--축하메시지함-->
+        <div id="order-text">
+            <p id="user-message">테스트 코멘트</p>
+            <p id="user-name">개발자</p>
+        </div>
+
+    </div>
+
+    <!--제이쿼리 스크립트-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--자바스크립트-->
+    <script src="../static/scripts.js"></script>
+</body>
+
+</html>

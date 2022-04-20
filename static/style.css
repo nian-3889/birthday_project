@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1920px;
+    background-image: url(../static/img/header.jpg);
+}
+
+.wrap {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 50px;
+    height: 300px;
+}
+
+.header> p {
+    text-align: center;
+    font-size: 2em;
+    line-height: 300px;
+    color: white;
+}
+
+/*카운트다운 css*/
+.wrap>div:nth-child(2) {
+    margin-top: 50px;
+    
+    text-align: center;
+}
+
+#remain-text {
+    font-family: 'Hi Melody', cursive;
+    font-size: 3em;
+    color: white;
+}
+
+#remain-time {
+    font-family: 'Hi Melody', cursive;
+    font-size: 2em;
+    color: white;
+}
+
+hr {
+    margin-top: 30px;
+    border: 0;
+    height: 10px;
+    box-shadow: 0 10px 10px -10px black inset;
+}
+
+hr::after {
+    content: "\00a0";
+}
+
+
+/*축하메시지함 css*/
+
+.bando-message {
+    padding-top: 20px;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: 'Hi Melody', cursive;
+}
+button {
+    margin: 0 auto;
+}
+
+.mypost {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 10px 10px -10px black;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.mypost>input {
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.mypost>textarea {
+    height: 300px;
+    resize: none;
+    background-color: transparent;
+    color: white;
+}
+
+.form-control {
+    display: block;
+    width: 100px;
+    font-size: 1rem;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+    padding: 1rem .75rem;
+}
+
+.form-button {
+    margin-top: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10%;
+    
+}
+
+#order-text {
+    margin-top: 30px;
+    width: 700px;
+    margin: 0 auto;
+    font-family: 'Nanum Pen Script', cursive;
+    /* border: 1px solid rgba(234, 247, 57, 0.836) */
+}
+
+#user-message {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#user-name {
+    font-size: 2em;
+    color: white;
+}
