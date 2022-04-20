@@ -31,7 +31,7 @@ function save_message() {
 
     $.ajax({
         type: 'POST',
-        url: '/birth',
+        url: '/post',
         data: {
             name_give: name,
             message_give: message
@@ -42,5 +42,17 @@ function save_message() {
             window.location.reload()
         }
 
+    });
+}
+
+function show_message() {
+    $('#order-box').empty()
+    $.ajax({
+        type: 'GET',
+        url: '/post',
+        data: {},
+        success: function (respones) {
+            console.log(respones)
+        }
     })
 }

@@ -39,18 +39,18 @@
             너의 31번째 생일도 특별해지도록 우리의 작은 축전을 담았어.<br>
             거짓말 같은 매일이 평범한 일상으로 돌아가기 전까지 함께 나아가자.
         </p>
-        <div class="mypost">
+        <form class="mypost" action="/post" method="post">
             <input type="text" id="name" class="form-control" placeholder="닉네임">
             <textarea class="form-control" id="message" cols="30" rows="10" placeholder="생일축하 멘트" maxlength="400"></textarea>
-            <input type="submit" class="form-button" value="메시지 남기기" onclick="save_message">
-        </div>
+            <input type="submit" class="form-button" value="메시지 남기기" onclick="alert('저장이 되었습니다.')">
+        </form>
 
         <hr>
 
         <!--이미지, 영상이 생기면 슬라이스로 구축-->
 
         <!--축하메시지함-->
-        <div id="order-text">
+        <div id="order-box">
             <p id="user-message">테스트 코멘트</p>
             <p id="user-name">개발자</p>
         </div>
