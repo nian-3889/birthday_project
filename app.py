@@ -12,10 +12,10 @@ def home():
 #post
 @app.route('/post', methods=["POST"])
 def birth_post():
-    name_receive = request.form['name_give']
-    message_receive = request.form['message_give']
-    print(name_receive, message_receive)
-    return jsonify({'msg':'post 연결 완료'})
+    name_receive = request.args.get('name_give')
+    # message_receive = request.args.get('message_give')
+    print(name_receive)
+    return jsonify({'name':name_receive})
 
 
 
