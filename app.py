@@ -9,24 +9,19 @@ db = client.birth
 def home():
     return render_template('index.html')
 
+#post
 @app.route('/post', methods=["POST"])
 def birth_post():
-    message_receive = request.form['message_give']
     name_receive = request.form['name_give']
+    message_receive = request.form['message_give']
+    print(name_receive, message_receive)
+    return jsonify({'msg':'post 연결 완료'})
 
-    doc = {
-        'message': message_receive,
-        'name': name_receive
-    }
 
-    db.birthday.insert_one(doc)
 
-    return jsonify({'msg': '테스트 코멘트'})
 
-@app.route("/post", methods=["GET"])
-def birth_get():
-    message_list = list(db.birth.find({}, {'_id':False}))
-    return jsonify({'messages': message_list})
+
+
 
 
 if __name__ == '__main__':

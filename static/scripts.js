@@ -30,7 +30,6 @@ $(document).ready(function() {
     show_message()
 })
 
-
 function save_message() {
     let name = $('#name').val()
     let message = $('#message').val()
@@ -40,34 +39,10 @@ function save_message() {
         url: '/post',
         data: {
             name_give: name,
-            message_give: message
+            message_give : message
         },
-
-        success: function (respones) {
-            console.log(respones)
-            window.location.reload()
-        }
-
-    });
-}
-
-function show_message() {
-    $('#order-box').empty()
-    $.ajax({
-        type: 'GET',
-        url: '/post',
-        data: {},
-        success: function (respones) {
-            let rows = response['messages']
-            for (let i = 0; i < rows.lentgth; i++) {
-                let name = rows[i]['name']
-                let messgae = rows[i]['message']
-
-                let temp_html =`<p id="user-message">테스트 코멘트</p>
-                                <p id="user-name">개발자</p>
-                                `
-                $('#order-box').append(temp_html)
-            }
+        success: function(response) {
+            console.log(response['msg'])
         }
     })
 }
