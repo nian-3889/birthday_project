@@ -27,6 +27,7 @@ setInterval(diffDay, 1000);
 //클라이언트
 
 $(document).ready(function() {
+    save_message()
     show_message()
 })
 
@@ -43,6 +44,27 @@ function save_message() {
         },
         success: function(response) {
             console.log(response['msg'])
+        }
+    })
+}
+
+function show_message() {
+    $('#order-box').empty()
+
+    $.ajax({
+        type: 'GET',
+        url: '/post',
+        data: {},
+        success: function(response) {
+            let rows = response['comments']
+            for (let i = 0; i < rows.length; i++) {
+                let name = rows[i]['name']
+                let message = rows[i]['message']
+
+                let temp_html = `<p id="user-message">${message}</p>
+                                 <p id="user-name">${name}</p>`
+                $('#order-box').append(temp_html)
+            }
         }
     })
 }
